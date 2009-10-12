@@ -10,6 +10,8 @@ Thanks to him
 
 737-100qatar
 
+IFR
+
 These liveries were made by : KuwaitCréation (Site : http://kuwaitcreator.jimdo.com/ )
 
 Thanks to him
