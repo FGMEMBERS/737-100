@@ -4,8 +4,8 @@
 
      Sources : http://en.wikipedia.org/wiki/Boeing_737
 
-     Wingspan        : 28.30 m    (   93 ft 0 in)
-     Lenght          : 28.60 m    (   94 ft 0 in)
+     Wingspan        : 28.35 m    (   93 ft 0 in)
+     Lenght          : 28.65 m    (   94 ft 0 in)
      Height          : 11.30 m    (   37 ft 0 in)
      Empty mass      : 28120 kg   (61864 lb)
      Cruise speed    : 780 km/h   (  421 kt)
@@ -15,7 +15,7 @@
 <airplane mass="61864">
 
   <!-- Approach configuration -->
-  <approach speed="140" aoa="3" fuel="0.30">
+  <approach speed="140" aoa="5" fuel="0.30">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
     <control-setting axis="/controls/flight/flaps" value="1"/>
@@ -23,7 +23,7 @@
   </approach>
 
   <!-- Cruise configuration -->
-  <cruise speed="421" alt="0" fuel="0.7">
+  <cruise speed="421" alt="10000" fuel="0.7">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
     <control-setting axis="/controls/flight/flaps" value="0"/>
@@ -31,7 +31,7 @@
     <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
 
-  <cockpit x="12.043" y="0.385" z="-1.726"/>
+  <cockpit x="11.743" y="0.485" z="-1.726"/>
 
   <fuselage ax="14.310" ay="0" az="-2.380" bx="-13.348" by="0" bz="-2.380" width="4.048" taper="0.0" midpoint="1.0"/>
 
@@ -41,12 +41,12 @@
         taper="0.25"
         sweep="10"
         dihedral="5"
-        camber="0.07">
-        <stall aoa="12" width="12" peak="1.5"/>
-        <flap0 start="0" end=".56" lift="1.4" drag="2"/>
-        <flap1 start="0.64" end="0.88" lift="1.4" drag="1.1"/>
+        camber="0.09">
+        <stall aoa="15" width="12" peak="1.5"/>
+        <flap0 start="0.004" end=".749" lift="1.4" drag="2"/>
+        <flap1 start="0.749" end="0.923" lift="1.4" drag="1.1"/>
         <slat start="0" end="1" aoa="2" drag="1.2"/>
-        <spoiler start="0.2" end="0.6" lift="0.2" drag="2.0"/>
+        <spoiler start="0.295" end="0.626" lift="0.2" drag="2.0"/>
 
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/surface-positions/flap-pos-norm" control="SLAT"/>
@@ -70,7 +70,7 @@
          taper="0.35"
          sweep="25"
          dihedral="7">
-         <stall aoa="15" width="5" peak="1.5"/>
+         <stall aoa="12" width="5" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.6" drag="1.2"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
@@ -95,15 +95,15 @@
 
     <!-- Sources : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_JT8D
 
-         Engines : Pratt & Whitney JT8D
-         Type    : Turbofan
-         Trust   : 19000
-         Masse   : 2890 lb
+         Engines   : Pratt & Whitney JT8D
+         Type      : Turbofan
+         Trust max : 21700 lbf
+         Masse     : 3200 lb
     -->
     <!-- Engine left -->
   <jet x="0.966" y="5.082"  z="-4.207"
-       mass="2890"
-       thrust="19000"
+       mass="3200"
+       thrust="21700"
        n1-idle="45"
        n1-max="105"
        n2-idle="70"
@@ -122,8 +122,8 @@
   </jet>
 
   <jet x="0.966" y="-5.082"  z="-4.207"
-       mass="2890"
-       thrust="19000"
+       mass="3200"
+       thrust="21700"
        n1-idle="45"
        n1-max="105"
        n2-idle="70"
@@ -176,12 +176,13 @@
         <control-speed control="EXTEND" transition-time="7"/>
   </gear>
 
-  <!-- Quantité max : Centre  7417 Kg soit 163518 lb -->
-  <!--                Général 4588 Kg soit  10114 lb -->
-  <tank x="0.7" y="5" z="-2" jet="true" capacity="5057"/>
-  <tank x="0.7" y="0" z="-1" jet="true" capacity="163518"/>
-  <tank x="0.7" y="-5" z="-2" jet="true" capacity="5057"/>
+  <!-- Quantité max : Centre           8755 L soit 2313 Gal soit envirron 19301 lbs -->
+  <!--                Gauche et droite 5674 L soit 1499 Gal soit envirron 12509 lbs chacun -->
+  <tank x="-0.443" y="7.120"  z="-2.972" jet="true" capacity="12509"/>
+  <tank x="1.494"  y="0.000"  z="-3.698" jet="true" capacity="19301"/>
+  <tank x="-0.443" y="-7.120" z="-2.972" jet="true" capacity="12509"/>
 
-  <ballast x="8" y="0.001" z="-3" mass="8000"/>
+  <ballast x="6" y="0.001" z="-3" mass="8000"/>
+  <ballast x="-13" y="0" z="-2" mass="-1500"/>
 
 </airplane>
