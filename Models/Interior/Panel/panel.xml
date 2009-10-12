@@ -99,5 +99,100 @@
     </offsets>
   </model>
 
+  <!-- epr -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/epr/eprL.xml</path>
+    <offsets>
+      <x-m> -0.065 </x-m>
+      <y-m> -0.210 </y-m>
+      <z-m>  0.291 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/epr/eprR.xml</path>
+    <offsets>
+      <x-m> -0.065 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.291 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rpm N1 -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/rpm/rpmN1L.xml</path>
+    <offsets>
+      <x-m> -0.067 </x-m>
+      <y-m> -0.210 </y-m>
+      <z-m>  0.230 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/rpm/rpmN1R.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.230 </z-m>
+    </offsets>
+  </model>
+
+  <!-- egt -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/egt/egtL.xml</path>
+    <offsets>
+      <x-m> -0.067 </x-m>
+      <y-m> -0.210 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/egt/egtR.xml</path>
+    <offsets>
+      <x-m> -0.067 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rpm N2 -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/rpm/rpmN2L.xml</path>
+    <offsets>
+      <x-m> -0.067 </x-m>
+      <y-m> -0.210 </y-m>
+      <z-m>  0.118 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/rpm/rpmN2R.xml</path>
+    <offsets>
+      <x-m> -0.067 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.118 </z-m>
+    </offsets>
+  </model>
+
+  <!-- débit -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/debit/debitL.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m> -0.210 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/debit/debitR.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+
 </PropertyList>
 

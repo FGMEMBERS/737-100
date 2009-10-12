@@ -182,7 +182,7 @@
   <tank x="1.494"  y="0.000"  z="-3.698" jet="true" capacity="19301"/>
   <tank x="-0.443" y="-7.120" z="-2.972" jet="true" capacity="12509"/>
 
-  <ballast x="6" y="0.001" z="-3" mass="8000"/>
+  <ballast x="7" y="0.001" z="-3" mass="8000"/>
   <ballast x="-13" y="0" z="-2" mass="-1500"/>
 
 </airplane>
