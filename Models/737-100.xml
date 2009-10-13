@@ -319,8 +319,8 @@
   <animation>
     <type>spin</type>
     <object-name>heliceG1</object-name>
-    <property>/controls/engines/engine[0]/throttle</property>
-    <factor> 100 </factor>
+    <property>/engines/engine[0]/n1</property>
+    <factor> 10 </factor>
     <center>
       <x-m> -2.730 </x-m>
       <y-m> -5.070 </y-m>
@@ -336,8 +336,8 @@
   <animation>
     <type>spin</type>
     <object-name>heliceG2</object-name>
-    <property>/controls/engines/engine[0]/throttle</property>
-    <factor> 100 </factor>
+    <property>/engines/engine[0]/n1</property>
+    <factor> 10 </factor>
     <center>
       <x-m>  1.413 </x-m>
       <y-m> -5.070 </y-m>
@@ -353,8 +353,8 @@
   <animation>
     <type>spin</type>
     <object-name>heliceD1</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
-    <factor> 100 </factor>
+    <property>/engines/engine[1]/n1</property>
+    <factor> 10 </factor>
     <center>
       <x-m> -2.730 </x-m>
       <y-m>  5.070 </y-m>
@@ -370,8 +370,8 @@
   <animation>
     <type>spin</type>
     <object-name>heliceD2</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
-    <factor> 100 </factor>
+    <property>/engines/engine[1]/n1</property>
+    <factor> 10 </factor>
     <center>
       <x-m>  1.413 </x-m>
       <y-m>  5.070 </y-m>
