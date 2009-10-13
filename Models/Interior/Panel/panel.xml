@@ -260,5 +260,53 @@
     </offsets>
   </model>
 
+  <!-- oil pressure -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/oilpressure/oilpressureL.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/oilpressure/oilpressureR.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.232 </z-m>
+    </offsets>
+  </model>
+
+  <!-- oil temperature -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/oiltemp/oiltempL.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m>  0.175 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/oiltemp/oiltempR.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.175 </z-m>
+    </offsets>
+  </model>
+
+  <!-- flaps -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m>  0.160 </y-m>
+      <z-m>  0.281 </z-m>
+    </offsets>
+  </model>
+
 </PropertyList>
 
