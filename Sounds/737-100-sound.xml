@@ -5,38 +5,19 @@
   <fx>
 
     <engine>
-      <name>engine</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[0]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[0]/prop-thrust</property>
-        <factor type="double">0.0001</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[0]/n1</property>
-        <factor>0.2</factor>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-    <engine>
       <name>whine</name>
-      <path>Sounds/whine.wav</path>
+      <path>Aircraft/737-100/Sounds/running.wav</path>
       <mode>looped</mode>
       <condition>
         <property>/engines/engine[0]/running</property>
       </condition>
       <volume>
-        <property>/engines/engine[0]/n2</property>
+        <property>/engines/engine[0]/n1</property>
         <factor>0.010</factor>
         <max>1.0</max>
       </volume>
       <pitch>
-        <property>/engines/engine[0]/n2</property>
+        <property>/engines/engine[0]/n1</property>
         <factor>0.01</factor>
         <offset>0.15</offset>
       </pitch>
@@ -45,38 +26,19 @@
     </engine>
 
     <engine>
-      <name>engine</name>
-      <path>Sounds/jet.wav</path>
-      <mode>looped</mode>
-      <condition>
-        <property>/engines/engine[1]/running</property>
-      </condition>
-      <volume>
-        <property>/engines/engine[1]/prop-thrust</property>
-        <factor type="double">0.0001</factor>
-      </volume>
-      <pitch>
-        <property>/engines/engine[1]/n1</property>
-        <factor>0.2</factor>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-    <engine>
       <name>whine</name>
-      <path>Sounds/whine.wav</path>
+      <path>Aircraft/737-100/Sounds/running.wav</path>
       <mode>looped</mode>
       <condition>
         <property>/engines/engine[1]/running</property>
       </condition>
       <volume>
-        <property>/engines/engine[1]/n2</property>
+        <property>/engines/engine[1]/n1</property>
         <factor>0.010</factor>
         <max>1.0</max>
       </volume>
       <pitch>
-        <property>/engines/engine[1]/n2</property>
+        <property>/engines/engine[1]/n1</property>
         <factor>0.01</factor>
         <offset>0.15</offset>
       </pitch>
@@ -138,7 +100,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
+      <path>Aircraft/737-100/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
       <pitch>
         <internal>dt_play</internal>
@@ -178,7 +140,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
+      <path>Aircraft/737-100/Sounds/gear.wav</path>
       <property>/gear/gear[1]/position-norm</property>
       <pitch>
         <internal>dt_play</internal>
@@ -218,7 +180,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Sounds/gear.wav</path>
+      <path>Aircraft/737-100/Sounds/gear.wav</path>
       <property>/gear/gear[2]/position-norm</property>
       <pitch>
         <internal>dt_play</internal>
@@ -257,7 +219,7 @@
 
     <squeal>
       <name>squeal</name>
-      <path>Sounds/squeal.wav</path>
+      <path>Aircraft/737-100/Sounds/touch.wav</path>
       <condition>
         <property>/gear/gear[0]/wow</property>
       </condition>
@@ -285,7 +247,7 @@
 
     <squeal>
       <name>squeal</name>
-      <path>Sounds/squeal.wav</path>
+      <path>Aircraft/737-100/Sounds/touch.wav</path>
       <condition>
         <property>/gear/gear[1]/wow</property>
       </condition>
@@ -313,7 +275,7 @@
 
     <squeal>
       <name>squeal</name>
-      <path>Sounds/squeal.wav</path>
+      <path>Aircraft/737-100/Sounds/touch.wav</path>
       <condition>
         <property>/gear/gear[2]/wow</property>
       </condition>
@@ -342,7 +304,7 @@
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
       <property>/surface-positions/left-flap-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -354,7 +316,7 @@
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
       <property>/surface-positions/right-flap-pos-norm</property>
       <volume>
         <factor>0.25</factor>
@@ -366,7 +328,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
       <property>/surface-positions/left-lower-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -378,7 +340,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
       <property>/surface-positions/left-upper-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -390,7 +352,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
       <property>/surface-positions/right-lower-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>
@@ -402,7 +364,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
+      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
       <property>/surface-positions/right-upper-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>

@@ -3,13 +3,13 @@
 <PropertyList>
 
   <sim include="Nasal/views.xml">
- 
+
     <author>BARANGER Emmanuel (3D/FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
-   
+
     <fuel-fraction>0.8</fuel-fraction>
-  
+
     <startup>
       <splash-texture>Aircraft/737-100/737-100-splash.png</splash-texture>
     </startup>
@@ -21,12 +21,15 @@
       </livery>
     </model>
 
-   <!-- Sources : http://www.b737.org.uk/images/pwratt-200.gif -->
-   <flaps>
-     <setting> 0.000 </setting>  <!-- flaps up     0 -->
-     <setting> 0.166 </setting>  <!-- Décollage   15 -->
-     <setting> 0.500 </setting>  <!-- Descente    30 -->
-     <setting> 1.000 </setting>  <!-- Attérissage 40 -->
+    <!-- Sources : http://www.b737.org.uk/images/pwratt-200.gif -->
+    <flaps>
+      <setting>0.000</setting> <!-- flaps up -->
+      <setting>0.125</setting> <!-- flaps  1 -->
+      <setting>0.375</setting> <!-- flaps  5 -->
+      <setting>0.625</setting> <!-- flaps 15 -->
+      <setting>0.750</setting> <!-- flaps 25 -->
+      <setting>0.875</setting> <!-- flaps 30 -->
+      <setting>1.000</setting> <!-- flaps 40 -->
     </flaps>
 
     <sound>
@@ -61,6 +64,11 @@
         <name>d</name>
         <desc>Open/Close door</desc>
       </key>
+      <key>
+        <name>j/k</name>
+        <desc>Spoilers</desc>
+      </key>
+
     </help>
 
     <menubar include="Dialogs/737-100-menu.xml"/>
@@ -87,7 +95,7 @@
   <input>
     <keyboard include="Nasal/737-100-keyboard.xml"/>
   </input>
- 
+
   <nasal>
     <b737100>
       <file>Aircraft/737-100/Nasal/doors.nas</file>
@@ -97,4 +105,3 @@
   </nasal>
 
 </PropertyList>
-

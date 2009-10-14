@@ -50,7 +50,7 @@
 
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/surface-positions/flap-pos-norm" control="SLAT"/>
-        <control-input axis="/controls/flight/speedbrake" control="SPOILER"/>
+        <control-input axis="/controls/flight/spoilers" control="SPOILER"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
 
