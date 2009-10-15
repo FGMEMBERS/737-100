@@ -101,7 +101,7 @@
       <file>Aircraft/737-100/Nasal/doors.nas</file>
       <file>Aircraft/737-100/Nasal/liveries.nas</file>
       <file>Aircraft/737-100/Nasal/light.nas</file>
-      <file>Aircraft/737-100/Nasal/pph.nas</file>
+      <file>Aircraft/737-100/Nasal/system.nas</file>
     </b737100>
   </nasal>
 
