@@ -290,5 +290,57 @@
     </offsets>
   </model>
 
+  <!-- dc-ac -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/dc-ac/dc-ac.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.101 </y-m>
+      <z-m> -0.067 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- power -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/power/power.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.101 </y-m>
+      <z-m> -0.208 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- grd-pwr -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/grd-pwr/grd-pwr.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.101 </y-m>
+      <z-m> -0.362 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ctrl -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/ctrl/ctrl.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.241 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
 </PropertyList>
 
