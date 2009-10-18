@@ -13,6 +13,17 @@
     </unload>
   </nasal>
 
+  <!--Pushback-model-->
+  <model>
+    <name>Pushback</name>
+    <path>Models\Airport\Pushback\Military.xml</path>
+    <offsets>
+      <x-m> -10.441 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>  -5.377 </z-m>
+    </offsets>
+  </model>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>

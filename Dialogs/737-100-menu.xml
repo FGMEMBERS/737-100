@@ -13,6 +13,14 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Pushback</label>
+        <name>pushback</name>
+        <binding>
+          <command>dialog-show</command>
+          <dialog-name>pushback</dialog-name>
+        </binding>
+      </item>
     </menu>
   </default>
 

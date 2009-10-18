@@ -93,14 +93,14 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
   </vstab>
 
-    <!-- Sources : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_JT8D
+  <!-- Sources : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_JT8D
 
-         Engines   : Pratt & Whitney JT8D
-         Type      : Turbofan
-         Trust max : 21700 lbf
-         Masse     : 3200 lb
-    -->
-    <!-- Engine left -->
+       Engines   : Pratt & Whitney JT8D
+       Type      : Turbofan
+       Trust max : 21700 lbf
+       Masse     : 3200 lb
+  -->
+  <!-- Engine left -->
   <jet x="0.966" y="5.082"  z="-4.207"
        mass="3200"
        thrust="21700"
@@ -153,6 +153,13 @@
 
         <control-speed control="EXTEND" transition-time="7"/>
   </gear>
+  
+  <!--thruster for pushback-->
+  <thruster x="10.441" y="0.000" z="-5.377" 
+            vx="1" vy="0" vz="0"
+            thrust="6000">
+            <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+  </thruster>
 
   <gear x="-0.084" y="2.770" z="-5.631"
         compression="0.3"
