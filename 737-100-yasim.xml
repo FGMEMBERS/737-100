@@ -164,6 +164,7 @@
   <gear x="-0.084" y="2.770" z="-5.631"
         compression="0.3"
         spring="1.0" >
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 
@@ -175,6 +176,7 @@
   <gear x="-0.084" y="-2.770" z="-5.631"
         compression="0.3"
         spring="1.0">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 
