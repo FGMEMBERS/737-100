@@ -75,6 +75,24 @@
 
   </sim>
 
+  <gear>
+    <gear n="0">
+      <tyre-smoke type="int">0</tyre-smoke>
+      <sprayspeed-ms type="double">0</sprayspeed-ms>
+      <spray-density type="double">0</spray-density>
+    </gear>
+    <gear n="1">
+      <tyre-smoke type="int">0</tyre-smoke>
+      <sprayspeed-ms type="double">0</sprayspeed-ms>
+      <spray-density type="double">0</spray-density>
+    </gear>
+    <gear n="2">
+      <tyre-smoke type="int">0</tyre-smoke>
+      <sprayspeed-ms type="double">0</sprayspeed-ms>
+      <spray-density type="double">0</spray-density>
+    </gear>
+  </gear>
+	
   <controls>
     <gear>
       <brake-parking type="double">1</brake-parking>
@@ -103,6 +121,9 @@
       <file>Aircraft/737-100/Nasal/light.nas</file>
       <file>Aircraft/737-100/Nasal/system.nas</file>
     </b737100>
+    <tyresmoke>
+      <file>Aircraft/737-100/Nasal/tyresmoke.nas</file>
+    </tyresmoke>
   </nasal>
 
 </PropertyList>
