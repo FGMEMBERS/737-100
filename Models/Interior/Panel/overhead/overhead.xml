@@ -342,5 +342,135 @@
     </offsets>
   </model>
 
+  <!-- heat -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/heat/heat.xml</path>
+    <offsets>
+      <x-m> 0.022 </x-m>
+      <y-m> 0.101 </y-m>
+      <z-m> 0.007 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ice -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/ice/ice.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.101 </y-m>
+      <z-m> -0.103 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- hyd -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/hyd/hyd.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.101 </y-m>
+      <z-m> -0.182 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- fwd -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/fwd/fwd.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.101 </y-m>
+      <z-m> -0.248 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- voice -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/voice/voice.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.101 </y-m>
+      <z-m> -0.301 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- horn -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/horn/horn.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.101 </y-m>
+      <z-m> -0.398 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- temp -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/temp/temp.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.010 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- pressure -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/pressure/pressure.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.206 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- auto -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/auto/auto.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.377 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- cab -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/cab/cab.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.455 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
 </PropertyList>
 

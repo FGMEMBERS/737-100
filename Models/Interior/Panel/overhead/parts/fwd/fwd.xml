@@ -4,11 +4,11 @@
 
 <PropertyList>
 
-  <path>mic.ac</path>
+  <path>fwd.ac</path>
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>mic</object-name>
+    <object-name>fwd</object-name>
     <object-name>visses</object-name>
   </animation>
 
