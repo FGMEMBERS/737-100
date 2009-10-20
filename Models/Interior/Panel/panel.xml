@@ -24,6 +24,19 @@
     </offsets>
   </model>
 
+  <!-- Pedest -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/pedest.xml</path>
+    <offsets>
+      <x-m>  0.296 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.185 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   9.504 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
   <animation> 
     <type>textranslate</type> 
     <object-name>panel</object-name> 
