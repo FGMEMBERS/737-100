@@ -168,5 +168,89 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/det/det.xml</path>
+    <offsets>
+      <x-m> 0.003 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/mode/mode.xml</path>
+    <offsets>
+      <x-m> 0.060 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/selcal/selcal.xml</path>
+    <offsets>
+      <x-m> 0.105 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/transponder/transponder.xml</path>
+    <offsets>
+      <x-m> 0.147 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/adf/adf.xml</path>
+    <offsets>
+      <x-m> 0.202 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/empty/empty2.xml</path>
+    <offsets>
+      <x-m> 0.265 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/trim/trim.xml</path>
+    <offsets>
+      <x-m> 0.340 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.163 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
 </PropertyList>
 
