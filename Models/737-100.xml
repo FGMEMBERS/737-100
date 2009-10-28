@@ -360,7 +360,7 @@
   <animation>
     <type>spin</type>
     <object-name>heliceG1</object-name>
-    <property>/engines/engine[0]/n1</property>
+    <property>engines/engine[0]/n1</property>
     <factor> 10 </factor>
     <center>
       <x-m> -2.730 </x-m>
@@ -377,7 +377,7 @@
   <animation>
     <type>spin</type>
     <object-name>heliceG2</object-name>
-    <property>/engines/engine[0]/n1</property>
+    <property>engines/engine[0]/n1</property>
     <factor> 10 </factor>
     <center>
       <x-m>  1.413 </x-m>
@@ -394,7 +394,7 @@
   <animation>
     <type>spin</type>
     <object-name>heliceD1</object-name>
-    <property>/engines/engine[1]/n1</property>
+    <property>engines/engine[1]/n1</property>
     <factor> 10 </factor>
     <center>
       <x-m> -2.730 </x-m>
@@ -411,7 +411,7 @@
   <animation>
     <type>spin</type>
     <object-name>heliceD2</object-name>
-    <property>/engines/engine[1]/n1</property>
+    <property>engines/engine[1]/n1</property>
     <factor> 10 </factor>
     <center>
       <x-m>  1.413 </x-m>
@@ -429,7 +429,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronG</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <factor> 15 </factor>
     <axis>
       <x1-m>   2.824 </x1-m>
@@ -444,7 +444,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     <factor> 15 </factor>
     <axis>
       <x1-m>  2.206 </x1-m>
@@ -460,7 +460,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil4G</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
       <entry><ind>  1.0 </ind><dep>   0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>   0 </dep></entry>
@@ -480,7 +480,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil3G</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
    
     <interpolation>
       <entry><ind>  1.0 </ind><dep>   0 </dep></entry>
@@ -501,7 +501,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil2G</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
 
     <interpolation>
       <entry><ind>  1.0 </ind><dep>   0 </dep></entry>
@@ -522,7 +522,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil4D</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     
     <interpolation>
       <entry><ind>  1.0 </ind><dep>   0 </dep></entry>
@@ -543,7 +543,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil3D</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
 
     <interpolation>
       <entry><ind>  1.0 </ind><dep>   0 </dep></entry>
@@ -564,7 +564,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil2D</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
            <interpolation>
       <entry><ind>  1.0 </ind><dep>   0 </dep></entry>
       <entry><ind>  0.0 </ind><dep>   0 </dep></entry>
@@ -592,7 +592,7 @@
   <animation>
     <type>rotate</type>
     <object-name>SpoilerGauche</object-name>
-    <property>/surface-positions/speedbrake-norm</property>
+    <property>surface-positions/speedbrake-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.6 </ind><dep> -30 </dep></entry>
@@ -612,7 +612,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil4G</object-name>
-    <property>/surface-positions/speedbrake-norm</property>
+    <property>surface-positions/speedbrake-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.6 </ind><dep> -30 </dep></entry>
@@ -639,7 +639,7 @@
   <animation>
     <type>rotate</type>
     <object-name>SpoilerDroit</object-name>
-    <property>/surface-positions/speedbrake-norm</property>
+    <property>surface-positions/speedbrake-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.6 </ind><dep> -30 </dep></entry>
@@ -659,7 +659,7 @@
   <animation>
     <type>rotate</type>
     <object-name>spoil4D</object-name>
-    <property>/surface-positions/speedbrake-norm</property>
+    <property>surface-positions/speedbrake-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.6 </ind><dep> -30 </dep></entry>
@@ -689,7 +689,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvantComplet</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> -30 </factor>
     <center>
       <x-m> -10.441 </x-m>
@@ -707,7 +707,7 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m> 11.328 </x1-m>
@@ -723,7 +723,7 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeurG</object-name>
-    <property>/surface-positions/elevator-pos-norm</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m> 13.826 </x1-m>
@@ -738,7 +738,7 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeurD</object-name>
-    <property>/surface-positions/elevator-pos-norm</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m> 12.238 </x1-m>
@@ -761,7 +761,7 @@
   <animation>
     <type>translate</type>
     <object-name>SlatsGauche</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0.000 </dep></entry>
       <entry><ind> 0.125 </ind><dep> -0.131 </dep></entry>
@@ -779,7 +779,7 @@
   <animation>
     <type>translate</type>
     <object-name>SlatsGauche</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0.000 </dep></entry>
       <entry><ind> 0.125 </ind><dep> -0.074 </dep></entry>
@@ -797,7 +797,7 @@
   <animation>
     <type>rotate</type>
     <object-name>SlatsGauche</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 10 </dep></entry>
@@ -818,7 +818,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat4G</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 60 </dep></entry>
@@ -837,7 +837,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat5G</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 60 </dep></entry>
@@ -863,7 +863,7 @@
   <animation>
     <type>translate</type>
     <object-name>SlatsDroit</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0.000 </dep></entry>
       <entry><ind> 0.125 </ind><dep> -0.131 </dep></entry>
@@ -881,7 +881,7 @@
   <animation>
     <type>translate</type>
     <object-name>SlatsDroit</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep> 0.000 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 0.074 </dep></entry>
@@ -899,7 +899,7 @@
   <animation>
     <type>rotate</type>
     <object-name>SlatsDroit</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 10 </dep></entry>
@@ -920,7 +920,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat4D</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 60 </dep></entry>
@@ -939,7 +939,7 @@
   <animation>
     <type>rotate</type>
     <object-name>slat5D</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 60 </dep></entry>
@@ -959,7 +959,7 @@
   <animation>
     <type>rotate</type>
     <object-name>sousvoletsG1</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 42 </factor>
     <center>
       <x-m>  2.101 </x-m>
@@ -976,7 +976,7 @@
   <animation>
     <type>rotate</type>
     <object-name>sousvoletsG2</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 42 </factor>
     <center>
       <x-m>  1.486 </x-m>
@@ -993,7 +993,7 @@
   <animation>
     <type>rotate</type>
     <object-name>sousvoletsD1</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 42 </factor>
     <center>
       <x-m>  2.101 </x-m>
@@ -1010,7 +1010,7 @@
   <animation>
     <type>rotate</type>
     <object-name>sousvoletsD2</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 42 </factor>
     <center>
       <x-m>  1.486 </x-m>
@@ -1027,7 +1027,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG1</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 40 </factor>
     <axis>
       <x1-m>  0.712 </x1-m>
@@ -1042,7 +1042,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG2</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 35 </factor>
     <axis>
       <x1-m>  0.712 </x1-m>
@@ -1057,7 +1057,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG3</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m>  0.712 </x1-m>
@@ -1072,7 +1072,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG4</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 45 </factor>
     <axis>
       <x1-m>   2.395 </x1-m>
@@ -1087,7 +1087,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG5</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 35 </factor>
     <axis>
       <x1-m>   2.395 </x1-m>
@@ -1102,7 +1102,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG6</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m>   2.395 </x1-m>
@@ -1117,7 +1117,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD1</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 40 </factor>
     <axis>
       <x1-m>  0.712 </x1-m>
@@ -1132,7 +1132,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD2</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 35 </factor>
     <axis>
       <x1-m>  0.712 </x1-m>
@@ -1147,7 +1147,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD3</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m>  0.712 </x1-m>
@@ -1162,7 +1162,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD4</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 45 </factor>
     <axis>
       <x1-m>  0.929 </x1-m>
@@ -1177,7 +1177,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD5</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 35 </factor>
     <axis>
       <x1-m>  0.929 </x1-m>
@@ -1192,7 +1192,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD6</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 20 </factor>
     <axis>
       <x1-m>  0.929 </x1-m>
@@ -1208,7 +1208,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvantComplet</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 110 </dep></entry>
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
@@ -1228,7 +1228,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteNG</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 90 </dep></entry>
@@ -1247,7 +1247,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteND</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 90 </dep></entry>
@@ -1275,7 +1275,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainGauche</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  80 </dep></entry>
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
@@ -1295,7 +1295,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteG</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>   0 </dep></entry>
       <entry><ind> 1 </ind><dep> 110 </dep></entry>
@@ -1322,7 +1322,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainDroit</object-name>
-    <property>/gear/gear[2]/position-norm</property>
+    <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> -80 </dep></entry>
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
@@ -1342,7 +1342,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteD</object-name>
-    <property>/gear/gear[2]/position-norm</property>
+    <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>    0 </dep></entry>
       <entry><ind> 1 </ind><dep> -110 </dep></entry>
@@ -1368,7 +1368,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueAvant</object-name>
-    <property>/gear/gear[0]/compression-norm</property>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
       <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
@@ -1433,7 +1433,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueGauche</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
       <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
@@ -1498,7 +1498,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueDroit</object-name>
-    <property>/gear/gear[2]/compression-norm</property>
+    <property>gear/gear[2]/compression-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
       <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
@@ -1557,7 +1557,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>/gear/gear[0]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -10.441 </x-m>
@@ -1574,7 +1574,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m>  0.084 </x-m>
@@ -1591,7 +1591,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>/gear/gear[2]/rollspeed-ms</property>
+    <property>gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m>  0.084 </x-m>
@@ -1615,7 +1615,7 @@
   <animation>
     <type>translate</type>
     <object-name>PartieBasse</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.4 </ind><dep> 0.0 </dep></entry>
@@ -1632,7 +1632,7 @@
   <animation>
     <type>translate</type>
     <object-name>stair1</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep> 0 </dep></entry>
       <entry><ind> 0.4 </ind><dep> 0 </dep></entry>
@@ -1649,7 +1649,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PartieBasse</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.4 </ind><dep> -44 </dep></entry>
@@ -1670,7 +1670,7 @@
   <animation>
     <type>rotate</type>
     <object-name>stair3</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.8 </ind><dep>   0 </dep></entry>
@@ -1699,7 +1699,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PorteAvantGauche</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>    0 </dep></entry>
@@ -1718,7 +1718,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteAvantGauche</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.08 </dep></entry>
@@ -1734,7 +1734,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteechelle</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 90 </dep></entry>
@@ -1759,7 +1759,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PorteAvantDroite</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -1778,7 +1778,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteAvantDroite</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.08 </dep></entry>
@@ -1800,7 +1800,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PorteArriereGauche</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>    0 </dep></entry>
@@ -1819,7 +1819,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteArriereGauche</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.08 </dep></entry>
@@ -1841,7 +1841,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PorteArriereDroite</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -1860,7 +1860,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteArriereDroite</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.08 </dep></entry>
@@ -1983,7 +1983,7 @@
   <animation>
     <type>translate</type>
     <object-name>DeflecteursGauche</object-name>
-    <property>/surface-positions/reverser-norm[0]</property>
+    <property>surface-positions/reverser-norm[0]</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 0.2 </dep></entry>
@@ -1999,7 +1999,7 @@
   <animation>
     <type>rotate</type>
     <object-name>deflecteurG1</object-name>
-    <property>/surface-positions/reverser-norm[0]</property>
+    <property>surface-positions/reverser-norm[0]</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep>  0 </dep></entry>
@@ -2018,7 +2018,7 @@
   <animation>
     <type>rotate</type>
     <object-name>deflecteurG2</object-name>
-    <property>/surface-positions/reverser-norm[0]</property>
+    <property>surface-positions/reverser-norm[0]</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.125 </ind><dep>   0 </dep></entry>
@@ -2043,7 +2043,7 @@
   <animation>
     <type>translate</type>
     <object-name>DeflecteursDroit</object-name>
-    <property>/surface-positions/reverser-norm[1]</property>
+    <property>surface-positions/reverser-norm[1]</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.125 </ind><dep> 0.2 </dep></entry>
@@ -2059,7 +2059,7 @@
   <animation>
     <type>rotate</type>
     <object-name>deflecteurD1</object-name>
-    <property>/surface-positions/reverser-norm[1]</property>
+    <property>surface-positions/reverser-norm[1]</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.125 </ind><dep>  0 </dep></entry>
@@ -2078,7 +2078,7 @@
   <animation>
     <type>rotate</type>
     <object-name>deflecteurD2</object-name>
-    <property>/surface-positions/reverser-norm[1]</property>
+    <property>surface-positions/reverser-norm[1]</property>
     <interpolation>
       <entry><ind> 0.000 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.125 </ind><dep>   0 </dep></entry>
