@@ -11,6 +11,19 @@
     <object-name>pedest</object-name>
   </animation>
 
+  <!-- Throttle -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/pedest/throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -0.110 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.044 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>   -9.504 </pitch-deg>
+      <heading-deg>  0.000 </heading-deg>
+    </offsets>
+  </model>
+
   <!-- Sous éléments -->
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/pedest/parts/fire/fire.xml</path>

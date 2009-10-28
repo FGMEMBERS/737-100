@@ -1,5 +1,7 @@
 default
 
+prototype
+
 These liveries were made by : Emmanuel BARANGER 2009
 
 731continw
