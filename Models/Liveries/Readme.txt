@@ -1,7 +1,5 @@
 default
 
-prototype
-
 These liveries were made by : Emmanuel BARANGER 2009
 
 731continw
@@ -22,7 +20,8 @@ Thanks to him
 
 731CA
 
+N73700
+
 These liveries were made by : Michaels DEAN
 
 Thanks to him
-
