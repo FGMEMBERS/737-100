@@ -1,6 +1,7 @@
 default
 
 These liveries were made by : Emmanuel BARANGER 2009
+                              KuwaitCréation
 
 731continw
 
@@ -13,6 +14,10 @@ Thanks to him
 IFR
 
 klm
+
+iliatalia
+
+KU
 
 These liveries were made by : KuwaitCréation (Site : http://kuwaitcreator.jimdo.com/ )
 
