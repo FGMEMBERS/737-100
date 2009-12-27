@@ -73,6 +73,13 @@
 
     <menubar include="Dialogs/737-100-menu.xml"/>
 
+    <!-- Added by D-SKY1 Thanks to him -->
+    <systems>
+      <autopilot>
+        <path>Aircraft/737-100/Systems/737-autopilot.xml</path>
+      </autopilot>
+    </systems>
+
   </sim>
 
   <gear>
