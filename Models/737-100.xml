@@ -1964,12 +1964,36 @@
     </offsets>
   </model>
 
+  <!-- Wing light cone left -->
+  <model>
+    <path>Aircraft/737-100/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>          -4.400 </x-m>
+      <y-m>          -2.203 </y-m>
+      <z-m>          -3.380 </z-m>
+      <heading-deg>  5 </heading-deg>
+      <pitch-deg> -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
   <model>
     <path>Aircraft/737-100/Models/light/flash.xml</path>
     <offsets>
       <x-m> -4.400 </x-m>
       <y-m>  2.203 </y-m>
       <z-m> -3.380 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Wing light cone right -->
+  <model>
+    <path>Aircraft/737-100/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>          -4.400 </x-m>
+      <y-m>           2.203 </y-m>
+      <z-m>          -3.380 </z-m>
+      <heading-deg>  -5 </heading-deg>
+      <pitch-deg> -7.500 </pitch-deg>
     </offsets>
   </model>
 
