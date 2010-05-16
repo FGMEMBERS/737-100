@@ -127,26 +127,6 @@
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>vitreAG</object-name>
-    <object-name>vitreAD</object-name>
-    <object-name>vitreBG</object-name>
-    <object-name>vitreBD</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>vitreAG</object-name>
-    <object-name>vitreAD</object-name>
-    <object-name>vitreBG</object-name>
-    <object-name>vitreBD</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>porteNG</object-name>
@@ -274,6 +254,96 @@
 -->
   </animation>
 
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>vitreAG</object-name>
+    <object-name>vitreAD</object-name>
+    <object-name>vitreBG</object-name>
+    <object-name>vitreBD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>vitreAG</object-name>
+    <object-name>vitreAD</object-name>
+    <object-name>vitreBG</object-name>
+    <object-name>vitreBD</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/737-100/Models/effects/737reflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>porteNG</object-name>
+    <object-name>porteND</object-name>
+    <object-name>base</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteCG</object-name>
+    <object-name>porteCD</object-name>
+    <object-name>porteBG</object-name>
+    <object-name>porteBD</object-name>
+    <object-name>ailes</object-name>
+    <object-name>sousailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>sousvoletsG1</object-name>
+    <object-name>sousvoletsG2</object-name>
+    <object-name>sousvoletsD1</object-name>
+    <object-name>sousvoletsD2</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>voletG3</object-name>
+    <object-name>voletG4</object-name>
+    <object-name>voletG5</object-name>
+    <object-name>voletG6</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>voletD3</object-name>
+    <object-name>voletD4</object-name>
+    <object-name>voletD5</object-name>
+    <object-name>voletD6</object-name>
+    <object-name>spoil1G</object-name>
+    <object-name>spoil2G</object-name>
+    <object-name>spoil3G</object-name>
+    <object-name>spoil4G</object-name>
+    <object-name>spoil1D</object-name>
+    <object-name>spoil2D</object-name>
+    <object-name>spoil3D</object-name>
+    <object-name>spoil4D</object-name>
+    <object-name>slat1G</object-name>
+    <object-name>slat2G</object-name>
+    <object-name>slat3G</object-name>
+    <object-name>slat4G</object-name>
+    <object-name>slat5G</object-name>
+    <object-name>slat1D</object-name>
+    <object-name>slat2D</object-name>
+    <object-name>slat3D</object-name>
+    <object-name>slat4D</object-name>
+    <object-name>slat5D</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>supportsmoteurs</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>deflecteurG1</object-name>
+    <object-name>deflecteurG2</object-name>
+    <object-name>deflecteurD1</object-name>
+    <object-name>deflecteurD2</object-name>
+    <object-name>tourvitres</object-name>
+    <object-name>antennes</object-name>
+    <object-name>tourlampes</object-name>
+    <object-name>reverse</object-name>
+    <object-name>porteechelle</object-name>
+  </effect>
+
   <!-- Particules OSG -->
   <model>
     <path>Aircraft/737-100/Models/effects/trailL.xml</path>
@@ -346,7 +416,7 @@
     </condition>
   </animation>
 
-  <!-- Intérieur -->
+  <!-- IntÃ©rieur -->
   <model>
     <path>Aircraft/737-100/Models/Interior/interior.xml</path>
     <offsets>
@@ -356,7 +426,7 @@
     </offsets>
   </model>
 
-  <!-- Rotation des hélices des réacteurs -->
+  <!-- Rotation des hÃ©lices des rÃ©acteurs -->
   <animation>
     <type>spin</type>
     <object-name>heliceG1</object-name>
@@ -1204,7 +1274,7 @@
     </axis>
   </animation>
 
-  <!-- Rentrée des roues -->
+  <!-- RentrÃ©e des roues -->
   <animation>
     <type>rotate</type>
     <object-name>TrainAvantComplet</object-name>
@@ -1966,13 +2036,14 @@
 
   <!-- Wing light cone left -->
   <model>
+    <name>Left-Taxi-Light</name>
     <path>Aircraft/737-100/Models/light/light-cone.xml</path>
     <offsets>
       <x-m>          -4.400 </x-m>
       <y-m>          -2.203 </y-m>
       <z-m>          -3.380 </z-m>
-      <heading-deg>  5 </heading-deg>
-      <pitch-deg> -7.500 </pitch-deg>
+      <heading-deg>   5 </heading-deg>
+      <pitch-deg>    -7.500 </pitch-deg>
     </offsets>
   </model>
 
@@ -1987,17 +2058,35 @@
 
   <!-- Wing light cone right -->
   <model>
+    <name>Right-Taxi-Light</name>
     <path>Aircraft/737-100/Models/light/light-cone.xml</path>
     <offsets>
       <x-m>          -4.400 </x-m>
       <y-m>           2.203 </y-m>
       <z-m>          -3.380 </z-m>
       <heading-deg>  -5 </heading-deg>
-      <pitch-deg> -7.500 </pitch-deg>
+      <pitch-deg>    -7.500 </pitch-deg>
     </offsets>
   </model>
 
-  <!-- Déflecteurs des reverses-thrust -->
+  <animation>
+    <name>All-Taxi-Light</name>
+    <object-name>Left-Taxi-Light</object-name>
+    <object-name>Right-Taxi-Light</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>All-Taxi-Light</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- DÃ©flecteurs des reverses-thrust -->
   <animation>
     <name>DeflecteursGauche</name>
     <object-name>deflecteurG1</object-name>
