@@ -46,11 +46,3 @@ NASA
 These liveries were made by : Brett HARRISON
 
 Thanks to him
-
-easyjet
-
-These liveries were made by : Joao PICANCO
-
-Thanks to him
-
-

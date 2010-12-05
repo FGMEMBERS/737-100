@@ -304,7 +304,7 @@
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
+      <path>Aircraft/737-100/Sounds/flap.wav</path>
       <property>/surface-positions/left-flap-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -316,7 +316,7 @@
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
+      <path>Aircraft/737-100/Sounds/flap.wav</path>
       <property>/surface-positions/right-flap-pos-norm</property>
       <volume>
         <factor>0.25</factor>
@@ -328,7 +328,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
+      <path>Aircraft/737-100/Sounds/flap.wav</path>
       <property>/surface-positions/left-lower-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -340,7 +340,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
+      <path>Aircraft/737-100/Sounds/flap.wav</path>
       <property>/surface-positions/left-upper-spoiler-pos-norm</property>
       <volume>
         <factor>0.15</factor>
@@ -352,7 +352,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
+      <path>Aircraft/737-100/Sounds/flap.wav</path>
       <property>/surface-positions/right-lower-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>
@@ -364,7 +364,7 @@
     <spoiler>
       <name>spoilers</name>
       <mode>in-transit</mode>
-      <path>Aircraft/737-100/Sounds/Sounds/flap.wav</path>
+      <path>Aircraft/737-100/Sounds/flap.wav</path>
       <property>/surface-positions/right-upper-spoiler-pos-norm</property>
       <volume>
         <factor>0.25</factor>
