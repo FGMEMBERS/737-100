@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Source :  http://users.skynet.be/jcordon/ -->
-
 <PropertyList>
 
   <path>throttle.ac</path>
@@ -9,7 +8,90 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>throttle</object-name>
+    <object-name>SpdBrkLever</object-name>
+    <object-name>BrkLever</object-name>
+    <object-name>flapgauge</object-name>
+    <object-name>FlapLever</object-name>
+    <object-name>tabtrim</object-name>
+    <object-name>stabtrim</object-name>
+    <object-name>throttleL</object-name>
+    <object-name>throttleR</object-name>
+    <object-name>littlethrottleL</object-name>
+    <object-name>littlethrottleR</object-name>
+    <object-name>throttletrous</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>throttle</object-name>
+    <object-name>SpdBrkLever</object-name>
+    <object-name>BrkLever</object-name>
+    <object-name>flapgauge</object-name>
+    <object-name>FlapLever</object-name>
+    <object-name>tabtrim</object-name>
+    <object-name>stabtrim</object-name>
+    <object-name>throttleL</object-name>
+    <object-name>throttleR</object-name>
+    <object-name>littlethrottleL</object-name>
+    <object-name>littlethrottleR</object-name>
+    <object-name>throttletrous</object-name>
+    <emission>
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleL</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m> 0.00004 </x-m>
+      <y-m> 0.00033 </y-m>
+      <z-m> 0.15000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleR</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m> 0.00004 </x-m>
+      <y-m> 0.00033 </y-m>
+      <z-m> 0.15000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>FlapLever</object-name>
+    <property>/surface-positions/flap-pos-norm</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m> 0.00008 </x-m>
+      <y-m> 0.04911 </y-m>
+      <z-m> 0.15914 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
 </PropertyList>
-

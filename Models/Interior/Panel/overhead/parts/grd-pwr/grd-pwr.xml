@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Source :  http://users.skynet.be/jcordon/ -->
 
@@ -12,5 +12,15 @@
     <object-name>visses</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>grd-pwr</object-name>
+    <emission>
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
 </PropertyList>
-

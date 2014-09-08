@@ -7,7 +7,7 @@ OBJECT poly
 name "heat"
 data 4
 heat
-texture "colors.png"
+texture "heat.png"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -448,7 +448,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "heat.png"
 texrep 1 1
 crease 30.000000
 numvert 423

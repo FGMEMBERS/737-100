@@ -1,16 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="737-100-jsbsim-cnf.xml"> -->
-<PropertyList include="737-100-yasim-cnf.xml">
+<PropertyList include="737-100-base.xml">
 
   <sim>
-    <description>Boeing 737-100</description>
-    <author>BARANGER Emmanuel</author>
-    <systems>
-      <autopilot>
-        <path>Aircraft/737-100/Systems/737-autopilot.xml</path>
-      </autopilot>
-    </systems>
+    
+    <description>Boeing 737-100 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+    <flight-model>yasim</flight-model>
+    <aero>737-100-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
   </sim>
+  
 </PropertyList>
-

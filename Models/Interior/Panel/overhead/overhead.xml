@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Source :  http://users.skynet.be/jcordon/ -->
-
 <PropertyList>
 
   <path>overhead.ac</path>
@@ -11,6 +10,17 @@
     <object-name>overhead</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>overhead</object-name>
+    <emission>
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
   <!-- Sous éléments -->
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/overhead/parts/empty/empty1.xml</path>
@@ -18,9 +28,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m>  0.422 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -30,9 +37,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m>  0.361 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -42,9 +46,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m>  0.450 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -54,9 +55,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.236 </y-m>
       <z-m> 0.443 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -66,9 +64,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.236 </y-m>
       <z-m> 0.390 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -78,9 +73,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.236 </y-m>
       <z-m> 0.249 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -90,9 +82,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m>  0.052 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -102,9 +91,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.032 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -115,9 +101,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m>  0.320 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -128,9 +111,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m>  0.262 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -141,9 +121,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m>  0.417 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -154,9 +131,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m>  0.364 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -167,9 +141,6 @@
       <x-m>  0.024 </x-m>
       <y-m> -0.101 </y-m>
       <z-m>  0.278 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -180,9 +151,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.102 </y-m>
       <z-m> 0.417 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -193,9 +161,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.103 </y-m>
       <z-m> 0.333 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -206,9 +171,6 @@
       <x-m> 0.024 </x-m>
       <y-m> 0.103 </y-m>
       <z-m> 0.267 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -219,9 +181,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.236 </y-m>
       <z-m> 0.338 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -232,9 +191,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.236 </y-m>
       <z-m> 0.289 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -245,9 +201,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.198 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -258,9 +211,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m> -0.018 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -271,9 +221,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m> -0.185 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -284,9 +231,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.235 </y-m>
       <z-m> -0.362 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -297,9 +241,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m> -0.067 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -310,9 +251,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m> -0.208 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -323,9 +261,6 @@
       <x-m>  0.022 </x-m>
       <y-m> -0.101 </y-m>
       <z-m> -0.362 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -336,9 +271,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.241 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -349,9 +281,6 @@
       <x-m> 0.022 </x-m>
       <y-m> 0.101 </y-m>
       <z-m> 0.007 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -362,9 +291,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.101 </y-m>
       <z-m> -0.103 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -375,9 +301,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.101 </y-m>
       <z-m> -0.182 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -388,9 +311,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.101 </y-m>
       <z-m> -0.248 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -401,9 +321,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.101 </y-m>
       <z-m> -0.301 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -414,9 +331,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.101 </y-m>
       <z-m> -0.398 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -427,9 +341,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.234 </y-m>
       <z-m> -0.010 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -440,9 +351,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.234 </y-m>
       <z-m> -0.206 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -453,9 +361,6 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.234 </y-m>
       <z-m> -0.377 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -466,11 +371,7 @@
       <x-m>  0.022 </x-m>
       <y-m>  0.234 </y-m>
       <z-m> -0.455 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
 </PropertyList>
-

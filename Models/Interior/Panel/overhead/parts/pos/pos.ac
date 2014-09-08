@@ -7,7 +7,7 @@ OBJECT poly
 name "pos"
 data 3
 pos
-texture "colors.png"
+texture "pos.png"
 texrep 1 1
 crease 30.000000
 numvert 62
@@ -540,7 +540,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "pos.png"
 texrep 1 1
 crease 30.000000
 numvert 162

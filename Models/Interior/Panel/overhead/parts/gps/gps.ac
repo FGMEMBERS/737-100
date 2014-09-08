@@ -7,7 +7,7 @@ OBJECT poly
 name "gps"
 data 3
 gps
-texture "colors.png"
+texture "gps.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -679,7 +679,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "gps.png"
 texrep 1 1
 crease 30.000000
 numvert 486

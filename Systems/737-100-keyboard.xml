@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,7 +7,7 @@
     <desc>Crew doors</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.doorsystem.crewexport();</script>
+      <script>doors.crew.toggle();</script>
     </binding>
   </key>
 
@@ -16,11 +16,20 @@
     <desc>Passengers doors</desc>
     <binding>
      <command>nasal</command>
-     <script>doors.doorsystem.passengerexport();</script>
+     <script>doors.passenger.toggle();</script>
     </binding>
    </key>
 
-  <key n="127">
+   <key n="108">
+     <name>l</name>
+     <desc>Landing light</desc>
+     <binding>
+       <command>property-toggle</command>
+       <property>/controls/switches/landing-light</property>
+     </binding>
+   </key>
+   
+   <key n="127">
     <name>Delete</name>
     <desc>Toggle Reversers</desc>
     <binding>
@@ -33,6 +42,4 @@
     </binding>
   </key>
 
-
 </PropertyList>
-

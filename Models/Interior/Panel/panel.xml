@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Source :  -->
-
 <PropertyList>
 
   <path>panel.ac</path>
@@ -11,6 +10,52 @@
     <object-name>panel</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>panel</object-name>
+    <emission>
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>panel</object-name> 
+    <!--
+    <condition>
+      <equals>
+        <property>/controls/lighting/panel-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    -->
+    <property>/controls/lighting/panel-norm</property>
+    <step> 1 </step>
+    <factor> 2 </factor>
+    <axis> 
+      <x> -1 </x> 
+      <y>  0 </y> 
+      <z>  0 </z> 
+    </axis> 
+  </animation>
+    <!--
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>panel</object-name> 
+    <property>/sim/time/sun-angle-rad</property>
+    <step> 1.57 </step>
+    <factor>0.318471338</factor>
+    <axis> 
+      <x> -1 </x> 
+      <y>  0 </y> 
+      <z>  0 </z> 
+    </axis> 
+  </animation>
+  -->
+
   <!-- Overhead -->
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/overhead/overhead.xml</path>
@@ -18,9 +63,7 @@
       <x-m> 0.457 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.937 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>   65 </pitch-deg>
-      <heading-deg>  0 </heading-deg>
+      <pitch-deg> 65 </pitch-deg>
     </offsets>
   </model>
 
@@ -31,114 +74,45 @@
       <x-m>  0.296 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.185 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   9.504 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> 9.504 </pitch-deg>
     </offsets>
   </model>
-
-  <animation> 
-    <type>textranslate</type> 
-    <object-name>panel</object-name> 
-    <property>/sim/time/sun-angle-rad</property>
-    <step> 1.57 </step>
-    <factor>0.318471338</factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
-    <axis> 
-      <x> -1 </x> 
-      <y>  0 </y> 
-      <z>  0 </z> 
-    </axis> 
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>panel</object-name>
-    <condition>
-      <greater-than>
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.57</value>
-      </greater-than>
-    </condition>
-    <emission>
-      <red>   1.0 </red>
-      <green> 1.0 </green>
-      <blue>  1.0 </blue>
-    </emission>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>panel</object-name>
-    <condition>
-      <less-than-equals>
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.57</value>
-      </less-than-equals>
-    </condition>
-    <emission>
-      <red>   0.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
-    </emission>
-  </animation>
-
-  <!-- Switch Landing Light -->
+  
+  <!-- Light panel -->
   <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/panel-light/panel_lighting.xml</path>
     <offsets>
-      <x-m> -0.024 </x-m>
-      <y-m> -0.520 </y-m>
+      <x-m> -0.022 </x-m>
+      <y-m> -0.460 </y-m>
       <z-m>  0.390 </z-m>
     </offsets>
   </model>
-
+  
   <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/panel-light/panel_lighting.xml</path>
     <offsets>
-      <x-m> -0.024 </x-m>
-      <y-m>  0.520 </y-m>
+      <x-m> -0.022 </x-m>
+      <y-m>  0.460 </y-m>
       <z-m>  0.390 </z-m>
     </offsets>
   </model>
-
+  
   <!-- ai -->
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.068 </x-m>
+      <x-m> -0.080 </x-m>
       <y-m> -0.455 </y-m>
-      <z-m>  0.255 </z-m>
+      <z-m>  0.251 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.08 </x-m>
-      <y-m> -0.455 </y-m>
-      <z-m>  0.247 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ai/ai.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
+      <x-m> -0.080 </x-m>
       <y-m>  0.455 </y-m>
-      <z-m>  0.255 </z-m>
-    </offsets>
-  </model>
-    <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ai/ai.xml</path>
-    <offsets>
-      <x-m> -0.08 </x-m>
-      <y-m>  0.455 </y-m>
-      <z-m>  0.247 </z-m>
+      <z-m>  0.251 </z-m>
     </offsets>
   </model>
 
@@ -146,7 +120,7 @@
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
     <offsets>
-      <x-m> -0.064 </x-m>
+      <x-m> -0.070 </x-m>
       <y-m> -0.455 </y-m>
       <z-m>  0.124 </z-m>
     </offsets>
@@ -155,12 +129,147 @@
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
     <offsets>
-      <x-m> -0.064 </x-m>
+      <x-m> -0.070 </x-m>
       <y-m>  0.455 </y-m>
       <z-m>  0.124 </z-m>
     </offsets>
   </model>
 
+  <!-- alt -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.069 </x-m>
+      <y-m> -0.350 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.069 </x-m>
+      <y-m>  0.560 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ralt -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ralt/ralt.xml</path>
+    <offsets>
+      <x-m> -0.069 </x-m>
+      <y-m> -0.270 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ralt/ralt.xml</path>
+    <offsets>
+      <x-m> -0.069 </x-m>
+      <y-m>  0.660 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m> -0.350 </y-m>
+      <z-m>  0.175 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.066 </x-m>
+      <y-m>  0.580 </y-m>
+      <z-m>  0.175 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- standbyadi -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/standby-adi/adi.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> -0.270 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/standby-adi/adi.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m>  0.670 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- asi -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.068 </x-m>
+      <y-m> -0.560 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.068 </x-m>
+      <y-m>  0.335 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- adf -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
+    <offsets>
+      <x-m> -0.068 </x-m>
+      <y-m> -0.560 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
+    <offsets>
+      <x-m> -0.068 </x-m>
+      <y-m>  0.335 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- marker -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/markers/marker.xml</path>
+    <offsets>
+      <x-m> -0.068 </x-m>
+      <y-m> -0.620 </y-m>
+      <z-m>  0.250 </z-m>
+      <roll-deg> -90 </roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/markers/marker.xml</path>
+    <offsets>
+      <x-m> -0.068 </x-m>
+      <y-m>  0.270 </y-m>
+      <z-m>  0.250 </z-m>
+      <roll-deg> -90 </roll-deg>
+    </offsets>
+  </model>
+  
   <!-- epr -->
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/epr/eprL.xml</path>
@@ -261,8 +370,8 @@
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/fuel/fuelC.xml</path>
     <offsets>
       <x-m> -0.067 </x-m>
-      <y-m> -0.19 </y-m>
-      <z-m>  0.12 </z-m>
+      <y-m> -0.190 </y-m>
+      <z-m>  0.120 </z-m>
     </offsets>
   </model>
 
@@ -281,82 +390,6 @@
       <x-m> -0.067 </x-m>
       <y-m> -0.165 </y-m>
       <z-m>  0.065 </z-m>
-    </offsets>
-  </model>
-
-  <!-- alt -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> -0.065 </x-m>
-      <y-m> -0.35 </y-m>
-      <z-m>  0.26 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> -0.065 </x-m>
-      <y-m>  0.56 </y-m>
-      <z-m>  0.26 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- ralt -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ralt/ralt.xml</path>
-    <offsets>
-      <x-m> -0.06 </x-m>
-      <y-m> -0.27 </y-m>
-      <z-m>  0.26 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/ralt/ralt.xml</path>
-    <offsets>
-      <x-m> -0.06 </x-m>
-      <y-m>  0.66 </y-m>
-      <z-m>  0.26 </z-m>
-    </offsets>
-  </model>
-
-  <!-- vsi -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m> -0.065 </x-m>
-      <y-m> -0.35 </y-m>
-      <z-m>  0.175 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m> -0.065 </x-m>
-      <y-m>  0.580 </y-m>
-      <z-m>  0.175 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- standbyadi -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/standby-adi/adi.xml</path>
-    <offsets>
-      <x-m> -0.085 </x-m>
-      <y-m> -0.270 </y-m>
-      <z-m>  0.170 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/standby-adi/adi.xml</path>
-    <offsets>
-      <x-m> -0.085 </x-m>
-      <y-m>  0.670 </y-m>
-      <z-m>  0.170 </z-m>
     </offsets>
   </model>
 
@@ -408,65 +441,6 @@
     </offsets>
   </model>
 
-  <!-- asi -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/asi/asi.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m> -0.56 </y-m>
-      <z-m>  0.25 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/asi/asi.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m>  0.335 </y-m>
-      <z-m>  0.25 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- asi -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/markers/marker.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m> -0.62 </y-m>
-      <z-m>  0.25 </z-m>
-      <roll-deg>-90</roll-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/markers/marker.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m>  0.27 </y-m>
-      <z-m>  0.25 </z-m>
-      <roll-deg>-90</roll-deg>
-    </offsets>
-  </model>
-
-  <!-- adf -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m> -0.56 </y-m>
-      <z-m>  0.17 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
-    <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m>  0.335 </y-m>
-      <z-m>  0.17 </z-m>
-    </offsets>
-  </model>
-  
   <model>
     <path>Aircraft/737-100/Models/Interior/Panel/Instruments/GearLever/gear.xml</path>
     <offsets>
@@ -476,42 +450,24 @@
     </offsets>
   </model>
 
+  <!-- vor -->
   <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m> -0.067 </x-m>
-      <y-m> -0.560 </y-m>
-      <z-m>  0.250 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m> -0.067 </x-m>
-      <y-m>  0.335 </y-m>
-      <z-m>  0.250 </z-m>
-    </offsets>
-  </model>
-
-  <!-- vor
-  <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vor/vor1.xml</path>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vor/vor.xml</path>
     <offsets>
       <x-m> -0.065 </x-m>
-      <y-m> -0.580 </y-m>
-      <z-m>  0.144 </z-m>
+      <y-m> -0.350 </y-m>
+      <z-m>  0.093 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vor/vor1.xml</path>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/vor/vor.xml</path>
     <offsets>
-      <x-m> -0.068 </x-m>
-      <y-m>  0.330 </y-m>
-      <z-m>  0.114 </z-m>
+      <x-m> -0.065 </x-m>
+      <y-m>  0.580 </y-m>
+      <z-m>  0.093 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
   <animation>
     <type>range</type>
@@ -520,4 +476,3 @@
   </animation>
 	
 </PropertyList>
-

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -18,18 +18,11 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <effect>
+    <inherits-from>Aircraft/737-100/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>drum</object-name>
@@ -38,10 +31,10 @@
     <object-name>plane</object-name>
     <object-name>bank-index</object-name>
     <emission>
+      <factor-prop>/controls/lighting/instrument-norm</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>    
 
@@ -49,11 +42,6 @@
     <type>rotate</type>
     <object-name>drum</object-name>
     <property>orientation/roll-deg</property>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -65,11 +53,6 @@
     <type>rotate</type>
     <object-name>bkg</object-name>
     <property>orientation/roll-deg</property>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -82,11 +65,6 @@
     <object-name>drum</object-name>
     <property>orientation/pitch-deg</property>
     <factor>1.5</factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -98,11 +76,6 @@
     <type>rotate</type>
     <object-name>bank-index</object-name>
     <property>orientation/roll-deg</property>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

@@ -7,7 +7,7 @@ OBJECT poly
 name "ctrl"
 data 4
 ctrl
-texture "colors.png"
+texture "ctrl.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -405,7 +405,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "ctrl.png"
 texrep 1 1
 crease 30.000000
 numvert 360
