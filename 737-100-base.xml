@@ -141,7 +141,7 @@
     </tyresmoke>
     <engines>
       <file>Aircraft/Generic/Engines/generic-yasim-engine.nas</file>
-      <file>Aircraft/Tu-134/Nasal/engines-yasim.nas</file>
+      <file>Aircraft/737-100/Nasal/engines-yasim.nas</file>
     </engines>
   </nasal>
 
