@@ -4,9 +4,9 @@
 
   <sim include="Systems/views.xml">
 
-    <description>Boeing 737-100 (JSBsim)</description>
-    <author>BARANGER Emmanuel (3D), REDPATH Jonathan (JSBsim)</author>
-    <aircraft-version>0.3</aircraft-version>
+    <description>Boeing 737-100 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
     <fuel-fraction>0.8</fuel-fraction>
