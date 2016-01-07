@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>panel_lighting.ac</path>
+  
+  <animation>
+    <object-name>PlacardLts</object-name>
+    <object-name>KnobLtsPanel</object-name>
+    <object-name>KnobLtsDigital</object-name>
+    <object-name>KnobLtsFlood</object-name>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>PlacardLts</object-name>
+    <object-name>KnobLtsPanel</object-name>
+    <object-name>KnobLtsDigital</object-name>
+    <object-name>KnobLtsFlood</object-name>
+    <emission>
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
+  
+  <!-- Switch Landing Light -->
+  <model>
+    <path>Aircraft/737-100/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>KnobLtsPanel</object-name>
+    <property>/controls/lighting/panel-norm</property>
+    <interpolation>
+      <entry><ind>0</ind><dep>  0</dep></entry>
+      <entry><ind>1</ind><dep>180</dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.005 </x-m>
+      <y-m>-0.030 </y-m>
+      <z-m>-0.007 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>KnobLtsPanel</object-name>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/lighting/panel-norm</property>
+        <step>0.1</step>
+        <min>0</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>KnobLtsPanel</object-name>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/lighting/panel-norm</property>
+        <step>-0.1</step>
+        <min>0</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>KnobLtsDigital</object-name>
+    <factor-prop>/controls/lighting/instrument-norm</factor-prop>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 180 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.008 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.007 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>KnobLtsDigital</object-name>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/lighting/instrument-norm</property>
+        <step>0.1</step>
+        <min>0</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>KnobLtsDigital</object-name>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/lighting/instrument-norm</property>
+        <step>-0.1</step>
+        <min>0</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+</PropertyList>
