@@ -58,4 +58,3 @@ var loop = func {
 }
 
 loop();
-

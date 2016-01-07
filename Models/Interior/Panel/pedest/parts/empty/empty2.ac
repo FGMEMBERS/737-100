@@ -8,7 +8,7 @@ OBJECT poly
 name "empty2"
 data 6
 empty2
-texture "colors.png"
+texture "empty0.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -433,7 +433,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "empty0.png"
 texrep 1 1
 crease 30.000000
 numvert 324

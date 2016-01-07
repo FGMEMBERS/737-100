@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -16,7 +16,13 @@
     <object-name>intporteCD</object-name>
     <object-name>intporteBG</object-name>
     <object-name>intporteBD</object-name>
-
+    <object-name>inttourporteAG</object-name>
+    <object-name>inttourporteAD</object-name>
+    <object-name>inttourporteCG</object-name>
+    <object-name>inttourporteCD</object-name>
+    <object-name>inttourporteBG</object-name>
+    <object-name>inttourporteBD</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
     <object-name>intvitreAG</object-name>
@@ -25,37 +31,19 @@
     <object-name>intvitreBD</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/737-100/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreAG</object-name>
     <object-name>intvitreAD</object-name>
     <object-name>intvitreBG</object-name>
     <object-name>intvitreBD</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intvitres</object-name>
-    <object-name>intvitreAG</object-name>
-    <object-name>intvitreAD</object-name>
-    <object-name>intvitreBG</object-name>
-    <object-name>intvitreBD</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- les fauteuils -->
   <model>
     <path>Aircraft/737-100/Models/Interior/seats/all-seats.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
   </model>
 
   <!-- Tableau de bord -->
@@ -65,9 +53,6 @@
       <x-m> -12.346 </x-m>
       <y-m>   0.000 </y-m>
       <z-m>  -2.269 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -78,9 +63,6 @@
       <x-m> -11.837 </x-m>
       <y-m>  -0.485 </y-m>
       <z-m>  -2.228 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -88,13 +70,28 @@
   <animation>
     <name>IntPorteAvantGauche</name>
     <object-name>intporteAG</object-name>
+    <object-name>inttourporteAG</object-name>
     <object-name>intvitreAG</object-name>
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteAvantGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteAvantGauche</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>    0 </dep></entry>
@@ -113,7 +110,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntPorteAvantGauche</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.08 </dep></entry>
@@ -129,13 +126,28 @@
   <animation>
     <name>IntPorteAvantDroite</name>
     <object-name>intporteAD</object-name>
+    <object-name>inttourporteAD</object-name>
     <object-name>intvitreAD</object-name>
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteAvantDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteAvantDroite</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -154,7 +166,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntPorteAvantDroite</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.08 </dep></entry>
@@ -170,13 +182,28 @@
   <animation>
     <name>IntPorteArriereGauche</name>
     <object-name>intporteBG</object-name>
+    <object-name>inttourporteBG</object-name>
     <object-name>intvitreBG</object-name>
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteArriereGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenge2.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteArriereGauche</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge2/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>    0 </dep></entry>
@@ -195,7 +222,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntPorteArriereGauche</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge2/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.08 </dep></entry>
@@ -211,13 +238,28 @@
   <animation>
     <name>IntPorteArriereDroite</name>
     <object-name>intporteBD</object-name>
+    <object-name>inttourporteBD</object-name>
     <object-name>intvitreBD</object-name>
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteArriereDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenge3.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteArriereDroite</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge3/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -236,7 +278,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntPorteArriereDroite</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge3/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.08 </dep></entry>
@@ -256,4 +298,3 @@
   </animation>
 
 </PropertyList>
-

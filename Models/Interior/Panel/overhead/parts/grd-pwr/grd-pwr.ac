@@ -7,7 +7,7 @@ OBJECT poly
 name "grd-pwr"
 data 7
 grd-pwr
-texture "colors.png"
+texture "grd-pwr.png"
 texrep 1 1
 crease 30.000000
 numvert 188
@@ -1319,7 +1319,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "grd-pwr.png"
 texrep 1 1
 crease 30.000000
 numvert 714

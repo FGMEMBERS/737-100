@@ -12,31 +12,28 @@
 
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      var float_2 = self.getNode("sim/multiplay/generic/float[16]", 1);
+      var float_3 = self.getNode("sim/multiplay/generic/float[17]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      var passenge2_door = self.getNode("sim/model/door-positions/passenge2/position-norm", 1);
+      var passenge3_door = self.getNode("sim/model/door-positions/passenge3/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
+      passenge2_door.alias(float_2);
+      passenge3_door.alias(float_3);
     </load>
 
     <unload>
       livery_update.stop();
       crew_door.unalias();
       passenger_door.unalias();
+      passenge2_door.unalias();
+      passenge3_door.unalias();
     </unload>
   </nasal>
-
-  <!--Pushback-model-->
-  <model>
-    <name>Pushback</name>
-    <path>Models/Airport/Pushback/Military.xml</path>
-    <offsets>
-      <x-m> -10.441 </x-m>
-      <y-m>   0.000 </y-m>
-      <z-m>  -5.377 </z-m>
-    </offsets>
-  </model>
 
   <animation>
     <!-- Objets opaques -->
@@ -123,7 +120,17 @@
     <object-name>lampes</object-name>
     <object-name>reverse</object-name>
     <object-name>porteechelle</object-name>
-
+    <object-name>rampe0</object-name>
+    <object-name>rampe1</object-name>
+    <object-name>rampe2</object-name>
+    <object-name>rampe3</object-name>
+    <object-name>rampe4</object-name>
+    <object-name>rampe5</object-name>
+    <object-name>rampe6</object-name>
+    <object-name>rampe7</object-name>
+    <object-name>rampe8</object-name>
+    <object-name>rampe9</object-name>
+    
     <object-name>trous</object-name>
     <object-name>heliceG1</object-name>
     <object-name>heliceG2</object-name>
@@ -234,39 +241,25 @@
     <object-name>stair1</object-name>
     <object-name>stair2</object-name>
     <object-name>stair3</object-name>
-
+    <object-name>rampe0</object-name>
+    <object-name>rampe1</object-name>
+    <object-name>rampe2</object-name>
+    <object-name>rampe3</object-name>
+    <object-name>rampe4</object-name>
+    <object-name>rampe5</object-name>
+    <object-name>rampe6</object-name>
+    <object-name>rampe7</object-name>
+    <object-name>rampe8</object-name>
+    <object-name>rampe9</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
-    <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
-    </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -337,28 +330,62 @@
     <object-name>tourlampes</object-name>
     <object-name>reverse</object-name>
     <object-name>porteechelle</object-name>
+    <object-name>rampe0</object-name>
+    <object-name>rampe1</object-name>
+    <object-name>rampe2</object-name>
+    <object-name>rampe3</object-name>
+    <object-name>rampe4</object-name>
+    <object-name>rampe5</object-name>
+    <object-name>rampe6</object-name>
+    <object-name>rampe7</object-name>
+    <object-name>rampe8</object-name>
+    <object-name>rampe9</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/737-100/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitreAG</object-name>
     <object-name>vitreAD</object-name>
     <object-name>vitreBG</object-name>
     <object-name>vitreBD</object-name>
-  </animation>
-
+  </effect>
+  
+  <!--Pushback-model-->
+  <model>
+    <name>Pushback</name>
+    <path>Models/Airport/Pushback/Goldhofert.xml</path>
+    <!-- <path>Models/Airport/Pushback/Military.xml</path> -->
+    <offsets>
+      <x-m> -10.441 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>  -5.377 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/737-100/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -5.3 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Intérieur -->
+  <model>
+    <name>Interieur</name>
+    <path>Aircraft/737-100/Models/Interior/interior.xml</path>
+  </model>
+  
+  <!-- For Rembrandt -->
   <animation>
     <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>vitreAG</object-name>
-    <object-name>vitreAD</object-name>
-    <object-name>vitreBG</object-name>
-    <object-name>vitreBD</object-name>
+    <object-name>Interieur</object-name>
   </animation>
-
+  
   <!-- Particules OSG -->
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
@@ -481,22 +508,6 @@
       <x-m>  3.766 </x-m>
       <y-m> 14.142 </y-m>
       <z-m> -2.335 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Une ombre pour OSG -->
-  <model>
-    <name>shadowOSG</name>
-    <path>Aircraft/737-100/Models/shadow.xml</path>
-  </model>
-
-  <!-- IntÃ©rieur -->
-  <model>
-    <path>Aircraft/737-100/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -817,33 +828,6 @@
       <x2-m>  0.262 </x2-m>
       <y2-m>  4.157 </y2-m>
       <z2-m> -3.260 </z2-m>
-    </axis>
-  </animation>
-
-  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
-  <animation>
-    <name>TrainAvantComplet</name>
-    <object-name>axeAH</object-name>
-    <object-name>axeAB</object-name>
-    <object-name>articuleH</object-name>
-    <object-name>articuleB</object-name>
-    <object-name>roueA</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>TrainAvantComplet</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> -30 </factor>
-    <center>
-      <x-m> -10.441 </x-m>
-      <y-m>   0.000 </y-m>
-      <z-m>  -5.079 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
     </axis>
   </animation>
 
@@ -1348,7 +1332,34 @@
     </axis>
   </animation>
 
-  <!-- RentrÃ©e des roues -->
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <name>TrainAvantComplet</name>
+    <object-name>axeAH</object-name>
+    <object-name>axeAB</object-name>
+    <object-name>articuleH</object-name>
+    <object-name>articuleB</object-name>
+    <object-name>roueA</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainAvantComplet</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -10.441 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>  -5.079 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <!-- Rentrée des roues -->
   <animation>
     <type>rotate</type>
     <object-name>TrainAvantComplet</object-name>
@@ -1413,6 +1424,8 @@
     <object-name>axeGB</object-name>
     <object-name>articuleGH</object-name>
     <object-name>articuleGB</object-name>
+    <object-name>articuleGH2</object-name>
+    <object-name>articuleGB2</object-name>
     <object-name>roueG</object-name>
   </animation>
 
@@ -1438,6 +1451,47 @@
  
   <animation>
     <type>rotate</type>
+    <object-name>articuleGH2</object-name>
+    <object-name>articuleGB2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  50 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.08583 </x-m>
+      <y-m> -2.62426 </y-m>
+      <z-m> -4.40864 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>articuleGH2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -175 </dep></entry>
+      <entry><ind> 1 </ind><dep>    0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.08583 </x-m>
+      <y-m> -2.19169 </y-m>
+      <z-m> -4.03569 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
     <object-name>porteG</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
@@ -1460,6 +1514,8 @@
     <object-name>axeDB</object-name>
     <object-name>articuleDH</object-name>
     <object-name>articuleDB</object-name>
+    <object-name>articuleDH2</object-name>
+    <object-name>articuleDB2</object-name>
     <object-name>roueD</object-name>
   </animation>
 
@@ -1483,6 +1539,47 @@
     </axis>
   </animation>
  
+  <animation>
+    <type>rotate</type>
+    <object-name>articuleDH2</object-name>
+    <object-name>articuleDB2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -50 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.08583 </x-m>
+      <y-m>  2.62426 </y-m>
+      <z-m> -4.40864 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>articuleDH2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 175 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.08583 </x-m>
+      <y-m>  2.19169 </y-m>
+      <z-m> -4.03569 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <animation>
     <type>rotate</type>
     <object-name>porteD</object-name>
@@ -1759,7 +1856,7 @@
   <animation>
     <type>translate</type>
     <object-name>PartieBasse</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.4 </ind><dep> 0.0 </dep></entry>
@@ -1776,7 +1873,7 @@
   <animation>
     <type>translate</type>
     <object-name>stair1</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep> 0 </dep></entry>
       <entry><ind> 0.4 </ind><dep> 0 </dep></entry>
@@ -1793,7 +1890,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PartieBasse</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.4 </ind><dep> -44 </dep></entry>
@@ -1814,7 +1911,7 @@
   <animation>
     <type>rotate</type>
     <object-name>stair3</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.8 </ind><dep>   0 </dep></entry>
@@ -1833,6 +1930,31 @@
     </axis>
   </animation>
 
+  <animation>
+    <name>Rampe</name>
+    <object-name>rampe0</object-name>
+    <object-name>rampe1</object-name>
+    <object-name>rampe2</object-name>
+    <object-name>rampe3</object-name>
+    <object-name>rampe4</object-name>
+    <object-name>rampe5</object-name>
+    <object-name>rampe6</object-name>
+    <object-name>rampe7</object-name>
+    <object-name>rampe8</object-name>
+    <object-name>rampe9</object-name>
+  </animation>
+      
+  <animation>
+    <type>select</type>
+    <object-name>Rampe</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/door-positions/crew/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+  
   <!-- Porte -->
   <animation>
     <name>PorteAvantGauche</name>
@@ -1841,9 +1963,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>PorteAvantGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>PorteAvantGauche</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>    0 </dep></entry>
@@ -1862,7 +1998,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteAvantGauche</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.08 </dep></entry>
@@ -1878,7 +2014,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteechelle</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 90 </dep></entry>
@@ -1901,9 +2037,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>PorteAvantDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>PorteAvantDroite</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -1922,7 +2072,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteAvantDroite</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.08 </dep></entry>
@@ -1942,9 +2092,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>PorteArriereGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenge2.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>PorteArriereGauche</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge2/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>    0 </dep></entry>
@@ -1963,7 +2127,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteArriereGauche</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge2/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 0.08 </dep></entry>
@@ -1983,9 +2147,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>PorteArriereDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenge3.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>PorteArriereDroite</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge3/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -2004,7 +2182,7 @@
   <animation>
     <type>translate</type>
     <object-name>PorteArriereDroite</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenge3/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.08 </dep></entry>
@@ -2046,6 +2224,15 @@
   </model>
 
   <model>
+    <path>Aircraft/737-100/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>   3.673 </x-m>
+      <y-m> -14.161 </y-m>
+      <z-m>  -2.326 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
     <path>Aircraft/737-100/Models/light/GreenLight.xml</path>
     <offsets>
       <x-m>  2.520 </x-m>
@@ -2055,25 +2242,7 @@
   </model>
 
   <model>
-    <path>Aircraft/737-100/Models/light/StrobeWhite.xml</path>
-    <offsets>
-      <x-m> 13.369 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -1.166 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/light/StrobeWhite.xml</path>
-    <offsets>
-      <x-m>   3.673 </x-m>
-      <y-m> -14.161 </y-m>
-      <z-m>  -2.326 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/737-100/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/737-100/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m>  3.673 </x-m>
       <y-m> 14.161 </y-m>
@@ -2081,6 +2250,15 @@
    </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/737-100/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> 13.369 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.166 </z-m>
+    </offsets>
+  </model>
+  
   <model>
     <path>Aircraft/737-100/Models/light/WhiteLight.xml</path>
     <offsets>
@@ -2113,11 +2291,11 @@
     <name>Left-Taxi-Light</name>
     <path>Aircraft/737-100/Models/light/light-cone.xml</path>
     <offsets>
-      <x-m>          -4.400 </x-m>
-      <y-m>          -2.203 </y-m>
-      <z-m>          -3.380 </z-m>
-      <heading-deg>   5 </heading-deg>
-      <pitch-deg>    -7.500 </pitch-deg>
+      <x-m>         -4.400 </x-m>
+      <y-m>         -2.203 </y-m>
+      <z-m>         -3.380 </z-m>
+      <heading-deg>  5.000 </heading-deg>
+      <pitch-deg>   -7.500 </pitch-deg>
     </offsets>
   </model>
 
@@ -2135,11 +2313,11 @@
     <name>Right-Taxi-Light</name>
     <path>Aircraft/737-100/Models/light/light-cone.xml</path>
     <offsets>
-      <x-m>          -4.400 </x-m>
-      <y-m>           2.203 </y-m>
-      <z-m>          -3.380 </z-m>
-      <heading-deg>  -5 </heading-deg>
-      <pitch-deg>    -7.500 </pitch-deg>
+      <x-m>         -4.400 </x-m>
+      <y-m>          2.203 </y-m>
+      <z-m>         -3.380 </z-m>
+      <heading-deg> -5.000 </heading-deg>
+      <pitch-deg>   -7.500 </pitch-deg>
     </offsets>
   </model>
 

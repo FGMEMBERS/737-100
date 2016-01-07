@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Boeing 737-100</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>Delete</name>
+    <desc>toggle thrust reversers</desc>
+  </key>
+  <key>
+    <name>Ctrl-b</name>
+    <desc>toggle speed brakes</desc>
+  </key>
+  <key>
+    <name>d</name>
+    <desc>Open/Close door</desc>
+  </key>
+  <key>
+    <name>}</name>
+    <desc>Engines Autostart</desc>
+  </key>
+  <key>
+    <name>l</name>
+    <desc>Landing light On/Off</desc>
+  </key>
+  <key>
+    <name>j/k</name>
+    <desc>Spoilers</desc>
+  </key>
+  
+</PropertyList>

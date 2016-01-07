@@ -7,7 +7,7 @@ OBJECT poly
 name "spoilers"
 data 8
 spoilers
-texture "colors.png"
+texture "spoilers.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -1267,7 +1267,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "spoilers.png"
 texrep 1 1
 crease 30.000000
 numvert 552

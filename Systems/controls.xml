@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <gear>
+    <brake-parking type="double">1</brake-parking>
+  </gear>
+  
+  <switches>
+    <landing-light type="bool">false</landing-light>
+  </switches>
+      
+</PropertyList>

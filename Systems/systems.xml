@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+  </electrical>
+  
+  <!-- Added by D-SKY1 Thanks to him -->
+  <autopilot>
+    <path>Aircraft/737-100/Systems/737-autopilot.xml</path>
+  </autopilot>
+  
+</PropertyList>

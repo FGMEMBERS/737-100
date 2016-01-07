@@ -1,11 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <fx>
 
+    <!-- Left engine -->
     <engine>
-      <name>whine</name>
+      <name>start0</name>
+      <mode>once</mode>
+      <path>Aircraft/737-100/Sounds/start.wav</path>
+      <condition>
+        <property>/controls/engines/engine[0]/starter</property>
+      </condition>
+      <volume>
+        <property>engines/engine[0]/n2</property>
+        <factor> 0.09 </factor>
+        <min> 0.3 </min>
+        <max> 0.9 </max>
+      </volume>
+      <pitch>
+        <property>engines/engine[0]/n2</property>
+        <factor> 0.01 </factor>
+        <min> 0.0 </min>
+        <max> 0.9 </max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
+    <engine>
+      <name>whine0</name>
       <path>Aircraft/737-100/Sounds/running.wav</path>
       <mode>looped</mode>
       <condition>
@@ -26,7 +50,48 @@
     </engine>
 
     <engine>
-      <name>whine</name>
+      <name>shutdown0</name>
+      <mode>once</mode>
+      <path>Aircraft/737-100/Sounds/shutdown.wav</path>
+      <condition>
+        <property>/controls/engines/engine[0]/cutoff</property> 
+      </condition>
+      <volume>
+        <property>/engines/engine[0]/n2</property>
+        <factor>0.09</factor>
+        <min>0.3</min>
+        <max>0.9</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
+    <!-- Right engine -->
+    <engine>
+      <name>start1</name>
+      <mode>once</mode>
+      <path>Aircraft/737-100/Sounds/start.wav</path>
+      <condition>
+        <property>/controls/engines/engine[1]/starter</property>
+      </condition>
+      <volume>
+        <property>engines/engine[1]/n2</property>
+        <factor> 0.09 </factor>
+        <min> 0.3 </min>
+        <max> 0.9 </max>
+      </volume>
+      <pitch>
+        <property>engines/engine[1]/n2</property>
+        <factor> 0.01 </factor>
+        <min> 0.0 </min>
+        <max> 0.9 </max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
+    <engine>
+      <name>whine1</name>
       <path>Aircraft/737-100/Sounds/running.wav</path>
       <mode>looped</mode>
       <condition>
@@ -46,6 +111,23 @@
       <max-dist>1000</max-dist>
     </engine>
 
+    <engine>
+      <name>shutdown1</name>
+      <mode>once</mode>
+      <path>Aircraft/737-100/Sounds/shutdown.wav</path>
+      <condition>
+        <property>/controls/engines/engine[1]/cutoff</property> 
+      </condition>
+      <volume>
+        <property>/engines/engine[1]/n2</property>
+        <factor>0.09</factor>
+        <min>0.3</min>
+        <max>0.9</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>

@@ -7,7 +7,7 @@ OBJECT poly
 name "fwd"
 data 3
 fwd
-texture "colors.png"
+texture "fwd.png"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -348,7 +348,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "colors.png"
+texture "fwd.png"
 texrep 1 1
 crease 30.000000
 numvert 324
