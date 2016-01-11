@@ -9,10 +9,6 @@
       <item>
         <label>Autostart</label>
         <binding>
-          <command>nasal</command>
-          <script>engines.autostart();</script>
-        </binding>
-        <binding>
           <command>property-assign</command>
           <property>controls/switches/landing-light</property>
           <value>0</value>
@@ -26,6 +22,10 @@
           <command>property-assign</command>
           <property>/controls/lighting/instrument-norm</property>
           <value>3</value>
+        </binding>
+        <binding>
+          <command>nasal</command>
+          <script>engines.autostart();</script>
         </binding>
       </item>
       <item>

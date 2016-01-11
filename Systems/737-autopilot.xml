@@ -234,8 +234,7 @@
     </config>
   </pid-controller>
   
-  <!-- Second Stage #2 (rudder control) -->
-  <!--
+  <!-- Second Stage #2 (rudder control)
   <pid-controller>
     <name>Nav 1 Stage 2-2</name>
     <debug>false</debug>
@@ -262,8 +261,7 @@
       <u_min>-0.25</u_min>
       <u_max>0.25</u_max> 
     </config>
-  </pid-controller>
-  -->
+  </pid-controller> -->
   
   <!-- =============================================================== -->
   <!-- Pitch Axis Modes                                                -->
@@ -660,8 +658,7 @@
     </config>
   </pid-controller>
   
-  <!-- Second Stage #2 drives the rudder -->
-  <!--
+  <!-- Second Stage #2 drives the rudder
   <pid-controller>
     <name>Track Hold Stage 2</name>
     <debug>false</debug>
@@ -673,7 +670,7 @@
       <prop>/instrumentation/flightdirector/curr-trk-corr-err</prop>
     </input>
     <reference>
-    <value>0</value>
+      <value>0</value>
     </reference>
     <output>
       <prop>/controls/flight/rudder</prop>
@@ -690,5 +687,4 @@
     </config>
   </pid-controller>
   -->
-  
 </PropertyList>

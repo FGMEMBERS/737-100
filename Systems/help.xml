@@ -17,6 +17,10 @@
     <desc>Open/Close door</desc>
   </key>
   <key>
+    <name>}</name>
+    <desc>Engines Autostart</desc>
+  </key>
+  <key>
     <name>l</name>
     <desc>Landing light On/Off</desc>
   </key>

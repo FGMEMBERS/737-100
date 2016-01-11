@@ -8,7 +8,7 @@
     <author>BARANGER Emmanuel (3D/FDM)</author>
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
-
+    
     <fuel-fraction>0.8</fuel-fraction>
 
     <startup>
@@ -22,6 +22,12 @@
       </livery>
     </model>
 
+    <sound>
+      <path>Aircraft/737-100/Sounds/737-100-sound.xml</path>
+      <switch type="bool">0</switch>
+      <stall-horn type="bool">0</stall-horn>
+    </sound>
+    
     <!-- Sources : http://www.b737.org.uk/images/pwratt-200.gif -->
     <flaps>
       <setting>0.000</setting> <!-- flaps up -->
@@ -32,12 +38,6 @@
       <setting>0.875</setting> <!-- flaps 30 -->
       <setting>1.000</setting> <!-- flaps 40 -->
     </flaps>
-
-    <sound>
-      <path>Aircraft/737-100/Sounds/737-100-sound.xml</path>
-      <switch type="bool">0</switch>
-      <stall-horn type="bool">0</stall-horn>
-    </sound>
 
     <multiplay>
       <chat_display>1</chat_display>
@@ -80,52 +80,19 @@
 
     <menubar include="Dialogs/737-100-menu.xml"/>
 
-    <systems>
-      <electrical>
-        <path>Aircraft/Generic/generic-electrical.xml</path>
-      </electrical>
-    </systems>  
-    
-    <instrumentation>
-      <path>Aircraft/737-100/Systems/instrumentation.xml</path>
-    </instrumentation>
-    
-    <!-- Added by D-SKY1 Thanks to him -->
-    <systems>
-      <autopilot>
-        <path>Aircraft/737-100/Systems/737-autopilot.xml</path>
-      </autopilot>
-    </systems>
+    <systems include="Systems/systems.xml"/>
+
+    <instrumentation include="Systems/instrumentation.xml"/>
     
   </sim>
 
-  <input>
-    <keyboard include="Systems/737-100-keyboard.xml"/>
-  </input>
+  <input include="Systems/737-100-keyboard.xml"/>
   
-  <gear>
-    <gear n="0">
-      <tyre-smoke type="int">0</tyre-smoke>
-      <sprayspeed-ms type="double">0</sprayspeed-ms>
-      <spray-density type="double">0</spray-density>
-    </gear>
-    <gear n="1">
-      <tyre-smoke type="int">0</tyre-smoke>
-      <sprayspeed-ms type="double">0</sprayspeed-ms>
-      <spray-density type="double">0</spray-density>
-    </gear>
-    <gear n="2">
-      <tyre-smoke type="int">0</tyre-smoke>
-      <sprayspeed-ms type="double">0</sprayspeed-ms>
-      <spray-density type="double">0</spray-density>
-    </gear>
-  </gear>
-	
-  <controls>
-    <gear>
-      <brake-parking type="double">1</brake-parking>
-    </gear>
-  </controls>
+  <gear include="Systems/gear.xml"/>
+
+  <controls include="Systems/controls.xml"/>
+
+  <engines include="Systems/engines.xml"/>
 
   <nasal>
     <doors>
