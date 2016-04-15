@@ -46,3 +46,9 @@ NASA
 These liveries were made by : Brett HARRISON
 
 Thanks to him
+
+
+These liveries were made by : Jonathan REDPATH
+Condor Flugdienst
+Thanks to him
+
