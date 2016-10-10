@@ -9,6 +9,10 @@
       <item>
         <label>Autostart</label>
         <binding>
+          <command>nasal</command>
+          <script>engines.autostart();</script>
+        </binding>
+        <binding>
           <command>property-assign</command>
           <property>controls/switches/landing-light</property>
           <value>0</value>
@@ -22,10 +26,6 @@
           <command>property-assign</command>
           <property>/controls/lighting/instrument-norm</property>
           <value>3</value>
-        </binding>
-        <binding>
-          <command>nasal</command>
-          <script>engines.autostart();</script>
         </binding>
       </item>
       <item>
@@ -43,6 +43,40 @@
           <dialog-name>pushback</dialog-name>
         </binding>
       </item>
+<item>
+		      <label>Announcements</label>
+		      <binding>
+					<command>nasal</command>
+					<script>
+						var mal = gui.Dialog.new("/sim/gui/dialogs/announcements/menu/dialog", "Aircraft/737-100/Dialogs/announcements-dialog.xml");
+						mal.open();
+		       </script>
+		      </binding>
+          </item> 
+     <item>
+			<name>lights</name>
+			<label>Lights</label>
+				<binding>
+					<command>nasal</command>
+					<script>
+						var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/737-100/Systems/lights-dlg.xml");
+						lights.open();
+					</script>
+				</binding>
+		  </item>
+
+		  <item>
+
+                <label>System Failures</label>
+					<binding>
+                            <command>nasal</command>
+                            <script>
+                             var failures = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/737-100/Systems/failures-dlg.xml");
+                             failures.open();
+                            </script>
+                    </binding>
+            </item>
+
     </menu>
   </default>
 

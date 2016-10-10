@@ -5,7 +5,7 @@
   <sim include="Systems/views.xml">
 
     <description>Boeing 737-100 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM), Gabriel Hernandez(New sounds, Effects, Other)</author>
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
     
