@@ -628,7 +628,7 @@
 		</gpws>
 		<gpws>
 			<name>500</name>
-			<path>Aircraft/737-100/Sounds/altitude-500.wav</path>
+			<path>Aircraft/737-100/Sounds/gpws/altitude-500.wav</path>
 			<condition>
 				<less-than>
 					<property>position/altitude-agl-ft</property>
@@ -643,7 +643,7 @@
 		</gpws>
 		<gpws>
 			<name>400</name>
-			<path>Aircraft/737-100/Sounds/altitude-400.wav</path>
+			<path>Aircraft/737-100/Sounds/gpws/altitude-400.wav</path>
 			<condition>
 				<less-than>
 					<property>position/altitude-agl-ft</property>
@@ -658,7 +658,7 @@
 		</gpws>
 		<gpws>
 			<name>300</name>
-			<path>Aircraft/737-100/Sounds/altitude-300.wav</path>
+			<path>Aircraft/737-100/Sounds/gpws/altitude-300.wav</path>
 			<condition>
 				<less-than>
 					<property>position/altitude-agl-ft</property>
