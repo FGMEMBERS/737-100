@@ -18,6 +18,18 @@
       <cockpit type="int"> 2 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <tags>
+      <tag>boeing</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>jet</tag>
+      <tag>transport</tag>
+      <tag>1960s</tag>
+      <tag>ifr</tag>
+    </tags>
     
   </sim>
   
