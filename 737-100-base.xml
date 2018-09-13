@@ -17,6 +17,7 @@
 
     <model>
       <path>Aircraft/737-100/Models/737-100.xml</path>
+      <fallback-model-index type="int">205</fallback-model-index>
       <livery>
         <file type="string">default</file>
       </livery>
